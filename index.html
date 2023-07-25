@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Application<span>(Web)</span> </h1>
+        </div>
+        <br>
+        <form action="">
+            <!-- first name -->
+            <div class="first-name h">
+                <label for="first">First name:*</label>
+                <input type="text" id="first" placeholder="Enter First Name..." required>
+            </div>
+            <!-- last name -->
+            <div class="last-name h">
+                <label for="last">Last name</label>
+                <input type="text" id="last" placeholder="Enter Last Name...">
+            </div>
+            <!-- Email -->
+            <div class="mail h">
+                <label for="email">Email Id:*</label>
+                <input type="email" id="email" placeholder="Enter Email..." required>
+            </div>
+            <!-- job role -->
+            <div class="job-role h">
+                <label for="">Job Role:*</label>
+                <select required>
+                    <option value="" aria-placeholder="Select Role...">Select Role...</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Full-Stack">Full-Stack</option>
+                </select>
+            </div>
+            <!-- Address -->
+            <div class="Add">
+                <label for="first">Address:</label>
+                <textarea rows="" columns=""></textarea>
+            </div>
+            <!-- college -->
+            <div class="clg h">
+                <label for="college">College:*</label>
+                <input type="text" id="college" placeholder="Enter Collge Name..." required>
+            </div>
+            <!-- pincode -->
+            <div class="pin-code h">
+                <label for="pincode">Pincode:*</label>
+                <input type="numbers" id="pincode" placeholder="Enter Pincode..." required>
+            </div>
+            <!-- date -->
+            <div class="dte h">
+                <label for="date">Date:*</label>
+                <input type="date" id="date" placeholder="25-07-2023" required>
+            </div>
+            <!-- cv -->
+            <div class="cv h">
+                <fieldset>
+                    <legend>Upload CV:*</legend>
+                <input type="file" id="cv" placeholder="Upload Cv" required>
+                </fieldset>
+            </div>
+            <div class="btn">
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
